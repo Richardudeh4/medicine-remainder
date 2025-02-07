@@ -1,6 +1,7 @@
 import { Animated, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useRef } from 'react'
 import { Ionicons } from '@expo/vector-icons';
+import Fontisto from '@expo/vector-icons/Fontisto';
 import { useRouter } from 'expo-router';
 
 const SplashScreen = () => {
@@ -35,8 +36,8 @@ const SplashScreen = () => {
           transform: [{scale: scaleAnim }]
         }
       ]}>
-        <Ionicons name='medical' color="white" size={100}/>
-      <Text style={styles.appName}>Med Remainer</Text>
+        <Fontisto name="doctor" size={100} color="white" />
+      <Text style={styles.appName}>MediMate</Text>
 
       </Animated.View>
 
@@ -49,7 +50,7 @@ export default SplashScreen;
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        backgroundColor: '#4CAF50',
+        backgroundColor: '#6883bc',
         alignItems: 'center',
         justifyContent: 'center',
     },
